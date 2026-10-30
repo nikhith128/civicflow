@@ -21,8 +21,8 @@
   --r-md: 12px;
   --glass: linear-gradient(180deg, rgba(255, 255, 255, .075), rgba(255, 255, 255, .035));
   --shadow: inset 0 1px 0 rgba(255, 255, 255, .07), 0 30px 60px -34px rgba(0, 0, 0, .9);
-  --font-head: "Playfair Display", Georgia, "Times New Roman", serif;
-  --font-body: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-head: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Figtree", "Segoe UI", system-ui, sans-serif;
 }
 
 * { box-sizing: border-box; }
