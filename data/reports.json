@@ -1313,13 +1313,23 @@
         "Open for 6 days (+6)"
       ]
     },
-    "status": "submitted",
-    "assignedTo": null,
+    "status": "assigned",
+    "assignedTo": "Drainage Dept",
     "timeline": [
       {
         "at": "2026-10-24T07:56:07.747Z",
         "status": "submitted",
         "note": "Report received"
+      },
+      {
+        "at": "2026-10-30T12:50:03.709Z",
+        "status": "under_review",
+        "note": "Moved to review"
+      },
+      {
+        "at": "2026-10-30T12:50:03.709Z",
+        "status": "assigned",
+        "note": "Assigned to Drainage Dept (mocked team)"
       }
     ],
     "linkedReports": []
@@ -1894,6 +1904,160 @@
         "at": "2026-10-26T07:56:07.747Z",
         "status": "submitted",
         "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0041",
+    "createdAt": "2026-10-30T12:42:55.918Z",
+    "description": "there is no road",
+    "imagePath": "uploads/CF-0041.jpg",
+    "categoryUser": "road_damage",
+    "location": {
+      "lat": 13.023717466177088,
+      "lng": 74.96882276072766,
+      "address": ""
+    },
+    "ai": {
+      "mode": "llm",
+      "category": "road_damage",
+      "summary": "A road is completely missing or destroyed.",
+      "factors": {
+        "safetyRisk": 2,
+        "peopleAffected": 2,
+        "vulnerableNearby": false,
+        "worsensWithTime": 1
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 36,
+      "priorityLevel": "Medium",
+      "reasons": [
+        "Moderate safety risk (+20)",
+        "Many people affected (+12)",
+        "May get worse over time (+4)"
+      ]
+    },
+    "status": "resolved",
+    "assignedTo": "Roads Dept",
+    "timeline": [
+      {
+        "at": "2026-10-30T12:42:55.918Z",
+        "status": "submitted",
+        "note": "Report received"
+      },
+      {
+        "at": "2026-10-30T12:43:57.309Z",
+        "status": "under_review",
+        "note": "Moved to review"
+      },
+      {
+        "at": "2026-10-30T12:43:57.309Z",
+        "status": "assigned",
+        "note": "Assigned to Roads Dept (mocked team)"
+      },
+      {
+        "at": "2026-10-30T12:43:59.527Z",
+        "status": "in_progress",
+        "note": "Status changed to in_progress"
+      },
+      {
+        "at": "2026-10-30T12:44:32.110Z",
+        "status": "resolved",
+        "note": "Status changed to resolved"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0042",
+    "createdAt": "2026-10-30T12:45:50.642Z",
+    "description": "there is no light",
+    "imagePath": "uploads/CF-0042.jpg",
+    "categoryUser": "streetlight",
+    "location": {
+      "lat": 13.023721094730858,
+      "lng": 74.96882471354479,
+      "address": ""
+    },
+    "ai": {
+      "mode": "llm",
+      "category": "streetlight",
+      "summary": "There is a lack of lighting.",
+      "factors": {
+        "safetyRisk": 1,
+        "peopleAffected": 1,
+        "vulnerableNearby": false,
+        "worsensWithTime": 0
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 16,
+      "priorityLevel": "Low",
+      "reasons": [
+        "Minor safety concern (+10)",
+        "A few people affected (+6)"
+      ]
+    },
+    "status": "rejected",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-30T12:45:50.642Z",
+        "status": "submitted",
+        "note": "Report received"
+      },
+      {
+        "at": "2026-10-30T12:46:21.631Z",
+        "status": "rejected",
+        "note": "Status changed to rejected"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0043",
+    "createdAt": "2026-10-30T12:47:55.976Z",
+    "description": "road not here",
+    "imagePath": "uploads/CF-0043.jpg",
+    "categoryUser": "not_sure",
+    "location": {
+      "lat": 13.02373177871534,
+      "lng": 74.96882321198021,
+      "address": ""
+    },
+    "ai": {
+      "mode": "llm",
+      "category": "road_damage",
+      "summary": "The reported road is missing.",
+      "factors": {
+        "safetyRisk": 1,
+        "peopleAffected": 1,
+        "vulnerableNearby": false,
+        "worsensWithTime": 0
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 16,
+      "priorityLevel": "Low",
+      "reasons": [
+        "Minor safety concern (+10)",
+        "A few people affected (+6)"
+      ]
+    },
+    "status": "rejected",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-30T12:47:55.976Z",
+        "status": "submitted",
+        "note": "Report received"
+      },
+      {
+        "at": "2026-10-30T12:49:16.603Z",
+        "status": "rejected",
+        "note": "Status changed to rejected"
       }
     ],
     "linkedReports": []
