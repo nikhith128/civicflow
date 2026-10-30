@@ -61,3 +61,18 @@ const CF = (function () {
 
   return { LABELS, STATUS, COLORS, esc, fmtDate, levelBadge, statusBadge, reasonsList, timeline, categoryOf, api };
 })();
+
+// Site menu: one place to move between the three pages
+document.addEventListener('DOMContentLoaded', function () {
+  const bar = document.querySelector('.topbar');
+  if (!bar) return;
+  const here = location.pathname;
+  const items = [['/', 'Report'], ['/track.html', 'Track'], ['/admin.html', 'Officer']];
+  const nav = document.createElement('nav');
+  nav.className = 'sitenav';
+  nav.innerHTML = items.map(function (it) {
+    const active = (it[0] === '/' ? (here === '/' || here === '/index.html') : here === it[0]);
+    return '<a href="' + it[0] + '"' + (active ? ' class="active" aria-current="page"' : '') + '>' + it[1] + '</a>';
+  }).join('');
+  bar.appendChild(nav);
+});

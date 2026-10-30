@@ -94,3 +94,9 @@ input[type="text"], input[type="password"] { width: 100%; padding: 10px; font-si
 .badge { display: inline-block; font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 6px; background: #fef3c7; color: #92400e; border: 1px solid #f59e0b; }
 .badge.ai { background: #ede9fe; color: #5b21b6; border-color: #8b5cf6; }
 .card h3 { margin: 14px 0 4px; font-size: 1rem; }
+
+/* ---- site menu ---- */
+.sitenav { display: flex; gap: 6px; margin-top: 10px; }
+.sitenav a { color: #fff; text-decoration: none; font-size: 0.9rem; font-weight: 600; padding: 4px 12px; border-radius: 999px; border: 1px solid rgba(255,255,255,.5); }
+.sitenav a.active { background: #fff; color: #1d4ed8; }
+.bar .sitenav { margin-top: 0; }
