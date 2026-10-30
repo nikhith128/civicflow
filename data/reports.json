@@ -1,0 +1,1107 @@
+[
+  {
+    "id": "CF-0001",
+    "createdAt": "2026-10-24T05:31:07.942Z",
+    "description": "Drain on Lakeview Road is completely blocked with plastic and mud, water is not flowing at all",
+    "imagePath": null,
+    "categoryUser": "drainage",
+    "location": {
+      "lat": 12.912,
+      "lng": 74.858,
+      "address": "Lakeview Road"
+    },
+    "ai": null,
+    "status": "under_review",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-24T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      },
+      {
+        "at": "2026-10-24T08:31:07.942Z",
+        "status": "under_review",
+        "note": "Moved to review"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0002",
+    "createdAt": "2026-10-25T05:31:07.942Z",
+    "description": "Knee-deep water on Lakeview Road after last night's rain, two-wheelers are stalling",
+    "imagePath": null,
+    "categoryUser": "waterlogging",
+    "location": {
+      "lat": 12.9123,
+      "lng": 74.8583,
+      "address": "Lakeview Road"
+    },
+    "ai": null,
+    "status": "assigned",
+    "assignedTo": "Drainage Dept",
+    "timeline": [
+      {
+        "at": "2026-10-25T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      },
+      {
+        "at": "2026-10-25T08:31:07.942Z",
+        "status": "under_review",
+        "note": "Moved to review"
+      },
+      {
+        "at": "2026-10-25T11:31:07.942Z",
+        "status": "assigned",
+        "note": "Assigned to Drainage Dept"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0003",
+    "createdAt": "2026-10-26T05:31:07.942Z",
+    "description": "Lakeview Road flooded again near the bakery, water has not drained for two days",
+    "imagePath": null,
+    "categoryUser": "waterlogging",
+    "location": {
+      "lat": 12.9121,
+      "lng": 74.8579,
+      "address": "Lakeview Road, near bakery"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-26T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0004",
+    "createdAt": "2026-10-27T05:31:07.942Z",
+    "description": "Road surface is broken and sinking on Lakeview Road where the water keeps standing",
+    "imagePath": null,
+    "categoryUser": "road_damage",
+    "location": {
+      "lat": 12.9125,
+      "lng": 74.8586,
+      "address": "Lakeview Road"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-27T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0005",
+    "createdAt": "2026-10-27T05:31:07.942Z",
+    "description": "Garbage dumped beside the Lakeview Road drain, bad smell and it is clogging the inlet",
+    "imagePath": null,
+    "categoryUser": "garbage",
+    "location": {
+      "lat": 12.9119,
+      "lng": 74.8577,
+      "address": "Lakeview Road"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-27T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0006",
+    "createdAt": "2026-10-29T05:31:07.942Z",
+    "description": "Drain cover is cracked on Lakeview Road, dirty water overflowing onto the footpath",
+    "imagePath": null,
+    "categoryUser": "drainage",
+    "location": {
+      "lat": 12.9124,
+      "lng": 74.8581,
+      "address": "Lakeview Road"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-29T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0007",
+    "createdAt": "2026-10-25T05:31:07.942Z",
+    "description": "Big pothole right at the school gate on School Road, children and bikes are at risk",
+    "imagePath": null,
+    "categoryUser": "road_damage",
+    "location": {
+      "lat": 12.915,
+      "lng": 74.852,
+      "address": "School Road, primary school gate"
+    },
+    "ai": null,
+    "status": "under_review",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-25T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      },
+      {
+        "at": "2026-10-25T08:31:07.942Z",
+        "status": "under_review",
+        "note": "Moved to review"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0008",
+    "createdAt": "2026-10-28T05:31:07.942Z",
+    "description": "Deep hole in the road opposite the primary school entrance, a scooter fell this morning",
+    "imagePath": null,
+    "categoryUser": "road_damage",
+    "location": {
+      "lat": 12.9152,
+      "lng": 74.8523,
+      "address": "School Road"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-28T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0009",
+    "createdAt": "2026-10-29T05:31:07.942Z",
+    "description": "School Road pothole is getting bigger every day, near the school gate",
+    "imagePath": null,
+    "categoryUser": "road_damage",
+    "location": {
+      "lat": 12.9149,
+      "lng": 74.8519,
+      "address": "School Road"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-29T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0010",
+    "createdAt": "2026-10-23T05:31:07.942Z",
+    "description": "Street light not working on Temple Street, the whole stretch is dark at night",
+    "imagePath": null,
+    "categoryUser": "streetlight",
+    "location": {
+      "lat": 12.9085,
+      "lng": 74.8545,
+      "address": "Temple Street"
+    },
+    "ai": null,
+    "status": "assigned",
+    "assignedTo": "Electrical Dept",
+    "timeline": [
+      {
+        "at": "2026-10-23T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      },
+      {
+        "at": "2026-10-23T08:31:07.942Z",
+        "status": "under_review",
+        "note": "Moved to review"
+      },
+      {
+        "at": "2026-10-23T11:31:07.942Z",
+        "status": "assigned",
+        "note": "Assigned to Electrical Dept"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0011",
+    "createdAt": "2026-10-27T05:31:07.942Z",
+    "description": "Temple Street lamp post has been dead for a week, women walking home feel unsafe",
+    "imagePath": null,
+    "categoryUser": "streetlight",
+    "location": {
+      "lat": 12.9086,
+      "lng": 74.8547,
+      "address": "Temple Street"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-27T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0012",
+    "createdAt": "2026-10-26T05:31:07.942Z",
+    "description": "Market bin is overflowing, garbage spilling onto the road and flies everywhere",
+    "imagePath": null,
+    "categoryUser": "garbage",
+    "location": {
+      "lat": 12.907,
+      "lng": 74.86,
+      "address": "Market Road"
+    },
+    "ai": null,
+    "status": "assigned",
+    "assignedTo": "Sanitation Dept",
+    "timeline": [
+      {
+        "at": "2026-10-26T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      },
+      {
+        "at": "2026-10-26T08:31:07.942Z",
+        "status": "under_review",
+        "note": "Moved to review"
+      },
+      {
+        "at": "2026-10-26T11:31:07.942Z",
+        "status": "assigned",
+        "note": "Assigned to Sanitation Dept"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0013",
+    "createdAt": "2026-10-27T05:31:07.942Z",
+    "description": "Community bin near the vegetable market has not been cleared for days and is overflowing",
+    "imagePath": null,
+    "categoryUser": "garbage",
+    "location": {
+      "lat": 12.9072,
+      "lng": 74.8602,
+      "address": "Market Road, vegetable market"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-27T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0014",
+    "createdAt": "2026-10-29T05:31:07.942Z",
+    "description": "Rotting waste piled next to the market bin, stray dogs are tearing the bags open",
+    "imagePath": null,
+    "categoryUser": "garbage",
+    "location": {
+      "lat": 12.9069,
+      "lng": 74.8598,
+      "address": "Market Road"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-29T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0015",
+    "createdAt": "2026-10-30T05:31:07.942Z",
+    "description": "Open manhole without a cover at the bus stop junction, someone could fall in, especially at night",
+    "imagePath": null,
+    "categoryUser": "drainage",
+    "location": {
+      "lat": 12.9135,
+      "lng": 74.861,
+      "address": "Bus Stop Junction"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-30T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0016",
+    "createdAt": "2026-10-30T05:31:07.942Z",
+    "description": "Electric wire hanging low and sparking near the children's park gate after the storm",
+    "imagePath": null,
+    "categoryUser": "other",
+    "location": {
+      "lat": 12.906,
+      "lng": 74.857,
+      "address": "Park Lane, children's park"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-30T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0017",
+    "createdAt": "2026-10-30T05:31:07.942Z",
+    "description": "Large tree fell across Garden Road blocking all traffic, branches resting on a parked car",
+    "imagePath": null,
+    "categoryUser": "other",
+    "location": {
+      "lat": 12.917,
+      "lng": 74.8595,
+      "address": "Garden Road"
+    },
+    "ai": null,
+    "status": "under_review",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-30T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      },
+      {
+        "at": "2026-10-30T06:31:07.942Z",
+        "status": "under_review",
+        "note": "Moved to review"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0018",
+    "createdAt": "2026-10-30T05:31:07.942Z",
+    "description": "Underpass is completely flooded, a car is stuck in the water with people inside",
+    "imagePath": null,
+    "categoryUser": "waterlogging",
+    "location": {
+      "lat": 12.919,
+      "lng": 74.854,
+      "address": "Railway Underpass"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-30T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0019",
+    "createdAt": "2026-10-18T05:31:07.942Z",
+    "description": "Footpath tiles broken near the bus stand, elderly people trip often",
+    "imagePath": null,
+    "categoryUser": "road_damage",
+    "location": {
+      "lat": 12.914,
+      "lng": 74.8605,
+      "address": "Bus Stand"
+    },
+    "ai": null,
+    "status": "resolved",
+    "assignedTo": "Roads Dept",
+    "timeline": [
+      {
+        "at": "2026-10-18T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      },
+      {
+        "at": "2026-10-18T08:31:07.942Z",
+        "status": "under_review",
+        "note": "Moved to review"
+      },
+      {
+        "at": "2026-10-18T11:31:07.942Z",
+        "status": "assigned",
+        "note": "Assigned to Roads Dept"
+      },
+      {
+        "at": "2026-10-18T14:31:07.942Z",
+        "status": "in_progress",
+        "note": "Work started"
+      },
+      {
+        "at": "2026-10-18T17:31:07.942Z",
+        "status": "resolved",
+        "note": "Marked as resolved"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0020",
+    "createdAt": "2026-10-21T05:31:07.942Z",
+    "description": "Speed breaker paint has faded, vehicles do not see it at night",
+    "imagePath": null,
+    "categoryUser": "road_damage",
+    "location": {
+      "lat": 12.911,
+      "lng": 74.853,
+      "address": "College Road"
+    },
+    "ai": null,
+    "status": "assigned",
+    "assignedTo": "Roads Dept",
+    "timeline": [
+      {
+        "at": "2026-10-21T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      },
+      {
+        "at": "2026-10-21T08:31:07.942Z",
+        "status": "under_review",
+        "note": "Moved to review"
+      },
+      {
+        "at": "2026-10-21T11:31:07.942Z",
+        "status": "assigned",
+        "note": "Assigned to Roads Dept"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0021",
+    "createdAt": "2026-10-22T05:31:07.942Z",
+    "description": "Small pothole on Station Road near the post office",
+    "imagePath": null,
+    "categoryUser": "road_damage",
+    "location": {
+      "lat": 12.91,
+      "lng": 74.8625,
+      "address": "Station Road"
+    },
+    "ai": null,
+    "status": "in_progress",
+    "assignedTo": "Roads Dept",
+    "timeline": [
+      {
+        "at": "2026-10-22T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      },
+      {
+        "at": "2026-10-22T08:31:07.942Z",
+        "status": "under_review",
+        "note": "Moved to review"
+      },
+      {
+        "at": "2026-10-22T11:31:07.942Z",
+        "status": "assigned",
+        "note": "Assigned to Roads Dept"
+      },
+      {
+        "at": "2026-10-22T14:31:07.942Z",
+        "status": "in_progress",
+        "note": "Work started"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0022",
+    "createdAt": "2026-10-24T05:31:07.942Z",
+    "description": "Plastic waste is being burnt in the empty plot behind the community hall, thick smoke",
+    "imagePath": null,
+    "categoryUser": "garbage",
+    "location": {
+      "lat": 12.9055,
+      "lng": 74.8535,
+      "address": "Behind community hall"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-24T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0023",
+    "createdAt": "2026-10-20T05:31:07.942Z",
+    "description": "Dustbin is missing at the park entrance, people litter on the grass",
+    "imagePath": null,
+    "categoryUser": "garbage",
+    "location": {
+      "lat": 12.9065,
+      "lng": 74.8575,
+      "address": "Park Lane"
+    },
+    "ai": null,
+    "status": "resolved",
+    "assignedTo": "Sanitation Dept",
+    "timeline": [
+      {
+        "at": "2026-10-20T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      },
+      {
+        "at": "2026-10-20T08:31:07.942Z",
+        "status": "under_review",
+        "note": "Moved to review"
+      },
+      {
+        "at": "2026-10-20T11:31:07.942Z",
+        "status": "assigned",
+        "note": "Assigned to Sanitation Dept"
+      },
+      {
+        "at": "2026-10-20T14:31:07.942Z",
+        "status": "in_progress",
+        "note": "Work started"
+      },
+      {
+        "at": "2026-10-20T17:31:07.942Z",
+        "status": "resolved",
+        "note": "Marked as resolved"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0024",
+    "createdAt": "2026-10-25T05:31:07.942Z",
+    "description": "Flickering street light near the temple gate",
+    "imagePath": null,
+    "categoryUser": "streetlight",
+    "location": {
+      "lat": 12.909,
+      "lng": 74.856,
+      "address": "Near temple gate"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-25T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0025",
+    "createdAt": "2026-10-19T05:31:07.942Z",
+    "description": "Street light stays on all day near the water tank, wasting power",
+    "imagePath": null,
+    "categoryUser": "streetlight",
+    "location": {
+      "lat": 12.9175,
+      "lng": 74.856,
+      "address": "Water tank road"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-19T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0026",
+    "createdAt": "2026-10-23T05:31:07.942Z",
+    "description": "Roadside drain is full of weeds and silt, mosquitoes are breeding",
+    "imagePath": null,
+    "categoryUser": "drainage",
+    "location": {
+      "lat": 12.904,
+      "lng": 74.859,
+      "address": "South Colony Road"
+    },
+    "ai": null,
+    "status": "under_review",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-23T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      },
+      {
+        "at": "2026-10-23T08:31:07.942Z",
+        "status": "under_review",
+        "note": "Moved to review"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0027",
+    "createdAt": "2026-10-26T05:31:07.942Z",
+    "description": "Sewage smell near the apartment lane, the drain seems partly blocked",
+    "imagePath": null,
+    "categoryUser": "drainage",
+    "location": {
+      "lat": 12.915,
+      "lng": 74.857,
+      "address": "Apartment Lane"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-26T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0028",
+    "createdAt": "2026-10-24T05:31:07.942Z",
+    "description": "Water collects near the ground entrance after any rain",
+    "imagePath": null,
+    "categoryUser": "waterlogging",
+    "location": {
+      "lat": 12.92,
+      "lng": 74.86,
+      "address": "Sports ground entrance"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-24T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0029",
+    "createdAt": "2026-10-27T05:31:07.942Z",
+    "description": "Puddle in front of the clinic never dries, slippery for patients",
+    "imagePath": null,
+    "categoryUser": "waterlogging",
+    "location": {
+      "lat": 12.906,
+      "lng": 74.852,
+      "address": "Clinic Road"
+    },
+    "ai": null,
+    "status": "assigned",
+    "assignedTo": "Drainage Dept",
+    "timeline": [
+      {
+        "at": "2026-10-27T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      },
+      {
+        "at": "2026-10-27T08:31:07.942Z",
+        "status": "under_review",
+        "note": "Moved to review"
+      },
+      {
+        "at": "2026-10-27T11:31:07.942Z",
+        "status": "assigned",
+        "note": "Assigned to Drainage Dept"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0030",
+    "createdAt": "2026-10-21T05:31:07.942Z",
+    "description": "Public tap near the bus stand has been leaking for days, water is wasted",
+    "imagePath": null,
+    "categoryUser": "public_service",
+    "location": {
+      "lat": 12.9145,
+      "lng": 74.8615,
+      "address": "Bus Stand"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-21T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0031",
+    "createdAt": "2026-10-16T05:31:07.942Z",
+    "description": "Bus shelter roof is broken, no shade or rain protection for commuters",
+    "imagePath": null,
+    "categoryUser": "public_service",
+    "location": {
+      "lat": 12.9195,
+      "lng": 74.8575,
+      "address": "Highway bus shelter"
+    },
+    "ai": null,
+    "status": "assigned",
+    "assignedTo": "General Services",
+    "timeline": [
+      {
+        "at": "2026-10-16T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      },
+      {
+        "at": "2026-10-16T08:31:07.942Z",
+        "status": "under_review",
+        "note": "Moved to review"
+      },
+      {
+        "at": "2026-10-16T11:31:07.942Z",
+        "status": "assigned",
+        "note": "Assigned to General Services"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0032",
+    "createdAt": "2026-10-22T05:31:07.942Z",
+    "description": "Public toilet near the market has no water supply",
+    "imagePath": null,
+    "categoryUser": "public_service",
+    "location": {
+      "lat": 12.9068,
+      "lng": 74.8595,
+      "address": "Market Road"
+    },
+    "ai": null,
+    "status": "under_review",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-22T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      },
+      {
+        "at": "2026-10-22T08:31:07.942Z",
+        "status": "under_review",
+        "note": "Moved to review"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0033",
+    "createdAt": "2026-10-27T05:31:07.942Z",
+    "description": "Stray dogs gathering near the school lane, children are scared to walk",
+    "imagePath": null,
+    "categoryUser": "other",
+    "location": {
+      "lat": 12.9155,
+      "lng": 74.8515,
+      "address": "School Lane"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-27T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0034",
+    "createdAt": "2026-10-25T05:31:07.942Z",
+    "description": "Illegal posters and banners are blocking the view at the junction",
+    "imagePath": null,
+    "categoryUser": "other",
+    "location": {
+      "lat": 12.9115,
+      "lng": 74.864,
+      "address": "Main Junction"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-25T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0035",
+    "createdAt": "2026-10-17T05:31:07.942Z",
+    "description": "Park benches are broken and unsafe to sit on",
+    "imagePath": null,
+    "categoryUser": "other",
+    "location": {
+      "lat": 12.9062,
+      "lng": 74.8568,
+      "address": "Park Lane"
+    },
+    "ai": null,
+    "status": "resolved",
+    "assignedTo": "General Services",
+    "timeline": [
+      {
+        "at": "2026-10-17T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      },
+      {
+        "at": "2026-10-17T08:31:07.942Z",
+        "status": "under_review",
+        "note": "Moved to review"
+      },
+      {
+        "at": "2026-10-17T11:31:07.942Z",
+        "status": "assigned",
+        "note": "Assigned to General Services"
+      },
+      {
+        "at": "2026-10-17T14:31:07.942Z",
+        "status": "in_progress",
+        "note": "Work started"
+      },
+      {
+        "at": "2026-10-17T17:31:07.942Z",
+        "status": "resolved",
+        "note": "Marked as resolved"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0036",
+    "createdAt": "2026-10-20T05:31:07.942Z",
+    "description": "Road edge has crumbled near the culvert, vehicles scrape the side",
+    "imagePath": null,
+    "categoryUser": "road_damage",
+    "location": {
+      "lat": 12.918,
+      "lng": 74.863,
+      "address": "Culvert Road"
+    },
+    "ai": null,
+    "status": "in_progress",
+    "assignedTo": "Roads Dept",
+    "timeline": [
+      {
+        "at": "2026-10-20T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      },
+      {
+        "at": "2026-10-20T08:31:07.942Z",
+        "status": "under_review",
+        "note": "Moved to review"
+      },
+      {
+        "at": "2026-10-20T11:31:07.942Z",
+        "status": "assigned",
+        "note": "Assigned to Roads Dept"
+      },
+      {
+        "at": "2026-10-20T14:31:07.942Z",
+        "status": "in_progress",
+        "note": "Work started"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0037",
+    "createdAt": "2026-10-24T05:31:07.942Z",
+    "description": "Manhole cover has sunk below road level near the pharmacy, causes a bump",
+    "imagePath": null,
+    "categoryUser": "road_damage",
+    "location": {
+      "lat": 12.9125,
+      "lng": 74.8545,
+      "address": "Pharmacy Street"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-24T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0038",
+    "createdAt": "2026-10-15T05:31:07.942Z",
+    "description": "New street light needed at the dark stretch by the playground",
+    "imagePath": null,
+    "categoryUser": "streetlight",
+    "location": {
+      "lat": 12.9045,
+      "lng": 74.8545,
+      "address": "Playground Road"
+    },
+    "ai": null,
+    "status": "rejected",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-15T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      },
+      {
+        "at": "2026-10-15T08:31:07.942Z",
+        "status": "under_review",
+        "note": "Moved to review"
+      },
+      {
+        "at": "2026-10-15T11:31:07.942Z",
+        "status": "rejected",
+        "note": "Closed without action"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0039",
+    "createdAt": "2026-10-28T05:31:07.942Z",
+    "description": "Water from the apartment overflows into the lane every morning",
+    "imagePath": null,
+    "categoryUser": "drainage",
+    "location": {
+      "lat": 12.916,
+      "lng": 74.8565,
+      "address": "Apartment Lane"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-28T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  },
+  {
+    "id": "CF-0040",
+    "createdAt": "2026-10-26T05:31:07.942Z",
+    "description": "Construction debris dumped on the roadside near the water tank",
+    "imagePath": null,
+    "categoryUser": "garbage",
+    "location": {
+      "lat": 12.9172,
+      "lng": 74.8565,
+      "address": "Water tank road"
+    },
+    "ai": null,
+    "status": "submitted",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "at": "2026-10-26T05:31:07.942Z",
+        "status": "submitted",
+        "note": "Report received"
+      }
+    ],
+    "linkedReports": []
+  }
+]
