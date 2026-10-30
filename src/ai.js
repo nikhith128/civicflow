@@ -189,7 +189,7 @@ async function analyzeMany(items) {
   if (!items || items.length === 0) return [];
 
   const key = (process.env.GEMINI_API_KEY || '').trim();
-  const hasKey = key !== '' && key !== 'your_key_here';
+   const hasKey = key.length >= 30 && !key.startsWith('PASTE') && key !== 'your_key_here';
   let llm = null;
 
   if (hasKey) {
