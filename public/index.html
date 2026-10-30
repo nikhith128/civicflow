@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CivicFlow - Report a problem</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>CivicFlow</h1>
+    <p>Report a problem in your area</p>
+  </header>
+
+  <main class="container">
+    <form id="report-form" novalidate>
+      <label for="description">What is the problem?</label>
+      <textarea id="description" rows="4" maxlength="1000" placeholder="e.g. Deep pothole near the school gate"></textarea>
+
+      <label for="category">Category</label>
+      <select id="category">
+        <option value="not_sure">Not sure</option>
+        <option value="road_damage">Road damage</option>
+        <option value="waterlogging">Waterlogging</option>
+        <option value="garbage">Garbage</option>
+        <option value="streetlight">Streetlight</option>
+        <option value="drainage">Drainage</option>
+        <option value="public_service">Public service</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label>Location</label>
+      <button type="button" id="locate-btn" class="secondary">Use my location</button>
+      <div id="map"></div>
+      <p id="location-text" class="hint">Tap the map to drop a pin.</p>
+
+      <label for="address">Landmark or address (optional)</label>
+      <input id="address" type="text" maxlength="200" placeholder="e.g. Near the bus stop">
+
+      <p id="error" class="error" hidden></p>
+      <button type="submit" id="submit-btn">Submit report</button>
+    </form>
+
+    <section id="result" class="card" hidden>
+      <h2>Report received</h2>
+      <p>Your report ID is <strong id="result-id"></strong></p>
+      <p>Save this ID to follow progress.</p>
+      <p><a id="track-link" href="#">Track this report</a></p>
+      <p class="hint">AI analysis is not connected yet (it is built in phase P2).</p>
+      <button type="button" id="another-btn" class="secondary">Report another problem</button>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/js/report.js"></script>
+</body>
+</html>
