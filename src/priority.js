@@ -62,7 +62,17 @@ function computePriority(factors, linkedCount, ageDays) {
   add(agePoints, 'Open for ' + age + ' day' + (age === 1 ? '' : 's'));
 
   let score = parts.reduce(function (sum, p) { return sum + p.points; }, 0);
-  score = Math.min(score, 100);
+   score = Math.min(score, 100);
+
+  // Safety floors: a risk to life can never sit below routine work
+  let floorNote = '';
+  if (safety === 3 && score < 80) {
+    score = 80;
+    floorNote = 'Immediate danger to life: raised to Critical';
+  } else if (safety >= 2 && people === 3 && score < 55) {
+    score = 55;
+    floorNote = 'Serious risk on a busy route: raised to at least High';
+  }
 
   const reasons = parts.map(function (p) {
     return p.text + ' (+' + p.points + ')';

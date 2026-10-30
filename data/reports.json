@@ -691,8 +691,8 @@
       },
       "duplicateOf": null,
       "duplicateReason": null,
-      "priorityScore": 48,
-      "priorityLevel": "Medium",
+      "priorityScore": 80,
+      "priorityLevel": "Critical",
       "reasons": [
         "Serious safety risk (danger of injury) (+30)",
         "A large number of people affected (+18)"
@@ -732,8 +732,8 @@
       },
       "duplicateOf": null,
       "duplicateReason": null,
-      "priorityScore": 57,
-      "priorityLevel": "High",
+      "priorityScore": 80,
+      "priorityLevel": "Critical",
       "reasons": [
         "Serious safety risk (danger of injury) (+30)",
         "Many people affected (+12)",
@@ -774,8 +774,8 @@
       },
       "duplicateOf": null,
       "duplicateReason": null,
-      "priorityScore": 38,
-      "priorityLevel": "Medium",
+      "priorityScore": 55,
+      "priorityLevel": "High",
       "reasons": [
         "Moderate safety risk (+20)",
         "A large number of people affected (+18)"
@@ -820,8 +820,8 @@
       },
       "duplicateOf": null,
       "duplicateReason": null,
-      "priorityScore": 42,
-      "priorityLevel": "Medium",
+      "priorityScore": 80,
+      "priorityLevel": "Critical",
       "reasons": [
         "Serious safety risk (danger of injury) (+30)",
         "Many people affected (+12)"
