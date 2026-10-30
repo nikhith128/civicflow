@@ -172,5 +172,24 @@ button:disabled { opacity: 0.55; cursor: not-allowed; }
 .hero h2 { margin: 0; font-size: 1.9rem; line-height: 1.12; font-weight: 700; max-width: 14em; }
 .hero p { margin: 10px 0 0; max-width: 26em; color: rgba(255,255,255,.82); }
 .hero svg { display: block; width: 100%; height: auto; margin-top: 18px; }
+.hero-pin {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pin-drop 4.8s cubic-bezier(.4, 0, .2, 1) infinite;
+  filter: drop-shadow(0 5px 3px rgba(9, 39, 34, .25));
+}
+.pin-shadow { fill: #092722; opacity: .28; transform-box: fill-box; transform-origin: center; animation: pin-shadow 4.8s ease-in-out infinite; }
+@keyframes pin-drop {
+  0%, 14%, 100% { transform: perspective(500px) translate3d(0, 0, 0) rotateY(0) scale(1); }
+  28% { transform: perspective(500px) translate3d(0, -17px, 18px) rotateY(28deg) scale(1.06); }
+  42% { transform: perspective(500px) translate3d(0, 0, 0) rotateY(0) scale(1); }
+  49% { transform: perspective(500px) translate3d(0, -4px, 2px) rotateY(-8deg) scale(1.02); }
+  56% { transform: perspective(500px) translate3d(0, 0, 0) rotateY(0) scale(1); }
+}
+@keyframes pin-shadow {
+  0%, 14%, 42%, 56%, 100% { transform: scaleX(1); opacity: .28; }
+  28% { transform: scaleX(.55); opacity: .12; }
+  49% { transform: scaleX(.82); opacity: .2; }
+}
 .glow { animation: glow 3.2s ease-in-out infinite; transform-origin: center; }
 @keyframes glow { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
