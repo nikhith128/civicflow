@@ -2061,5 +2061,62 @@
       }
     ],
     "linkedReports": []
+  },
+  {
+    "id": "CF-0044",
+    "createdAt": "2026-10-30T13:36:11.672Z",
+    "description": "there is no food like we are dying",
+    "imagePath": "uploads/CF-0044.jpg",
+    "categoryUser": "not_sure",
+    "location": {
+      "lat": 13.02372494243844,
+      "lng": 74.96883158182777,
+      "address": ""
+    },
+    "ai": {
+      "mode": "llm",
+      "category": "public_service",
+      "summary": "Report of severe food shortage and distress.",
+      "factors": {
+        "safetyRisk": 3,
+        "peopleAffected": 1,
+        "vulnerableNearby": false,
+        "worsensWithTime": 3
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 80,
+      "priorityLevel": "Critical",
+      "reasons": [
+        "Serious safety risk (danger of injury) (+30)",
+        "A few people affected (+6)",
+        "Will get worse quickly if not fixed (+12)"
+      ]
+    },
+    "status": "rejected",
+    "assignedTo": "General Services",
+    "timeline": [
+      {
+        "at": "2026-10-30T13:36:11.672Z",
+        "status": "submitted",
+        "note": "Report received"
+      },
+      {
+        "at": "2026-10-30T13:37:00.625Z",
+        "status": "under_review",
+        "note": "Moved to review"
+      },
+      {
+        "at": "2026-10-30T13:37:00.625Z",
+        "status": "assigned",
+        "note": "Assigned to General Services (mocked team)"
+      },
+      {
+        "at": "2026-10-30T13:37:43.006Z",
+        "status": "rejected",
+        "note": "Status changed to rejected"
+      }
+    ],
+    "linkedReports": []
   }
 ]
