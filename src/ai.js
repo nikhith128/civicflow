@@ -218,4 +218,4 @@ async function analyzeReport(item) {
   return results[0];
 }
 
-module.exports = { analyzeMany, analyzeReport, fallbackAnalyze, CATEGORIES };
+module.exports = { analyzeMany, analyzeReport, fallbackAnalyze, rawGemini: callGemini, CATEGORIES };

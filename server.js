@@ -7,10 +7,25 @@ const multer = require('multer');
 const db = require('./src/db');
 const ai = require('./src/ai');
 const pipeline = require('./src/pipeline');
+const { findHotspots } = require('./src/hotspots');
+const { buildBrief } = require('./src/brief');
 
 const app = express();
 
 const CATEGORIES = ['road_damage', 'waterlogging', 'garbage', 'streetlight', 'drainage', 'public_service', 'other'];
+
+const TEAMS = ['Roads Dept', 'Drainage Dept', 'Sanitation Dept', 'Electrical Dept', 'General Services'];
+
+// Allowed next statuses (frozen status flow from DRD)
+const NEXT = {
+  submitted: ['under_review', 'duplicate', 'rejected'],
+  under_review: ['assigned', 'duplicate', 'rejected'],
+  assigned: ['in_progress', 'rejected'],
+  in_progress: ['resolved'],
+  resolved: [],
+  duplicate: [],
+  rejected: []
+};
 
 const UPLOAD_DIR = path.join(__dirname, 'uploads');
 const IMAGE_TYPES = { 'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp' };
@@ -123,6 +138,75 @@ app.post('/api/reports', handleUpload, async (req, res) => {
 
   pipeline.saveAnalyzed(report, analysis);
   res.status(201).json(report);
+});
+
+app.get('/api/teams', (req, res) => {
+  res.json({ mocked: true, teams: TEAMS, statusFlow: NEXT });
+});
+
+// Lets the dashboard check the PIN before showing anything
+app.get('/api/admin/check', requireAdmin, (req, res) => {
+  res.json({ ok: true });
+});
+
+app.get('/api/hotspots', (req, res) => {
+  res.json(findHotspots(db.getAll()));
+});
+
+app.get('/api/brief', async (req, res) => {
+  try {
+    res.json(await buildBrief(db.getAll()));
+  } catch (err) {
+    res.status(500).json({ error: 'Could not build the brief' });
+  }
+});
+
+// Mutations run synchronously (read, change, save) so two requests cannot overwrite each other.
+app.patch('/api/reports/:id/status', requireAdmin, (req, res) => {
+  const all = db.getAll();
+  const report = all.find(r => r.id === req.params.id);
+  if (!report) return res.status(404).json({ error: 'Report not found' });
+  const status = String((req.body || {}).status || '');
+  const note = String((req.body || {}).note || '').trim().slice(0, 300);
+  if (!Object.prototype.hasOwnProperty.call(NEXT, status)) {
+    return res.status(400).json({ error: 'Unknown status' });
+  }
+  if (NEXT[report.status].indexOf(status) === -1) {
+    return res.status(400).json({ error: 'Cannot move from ' + report.status + ' to ' + status });
+  }
+  if (status === 'assigned' && !report.assignedTo) {
+    return res.status(400).json({ error: 'Assign a team first' });
+  }
+  report.status = status;
+  report.timeline.push({ at: new Date().toISOString(), status: status, note: note || 'Status changed to ' + status });
+  db.saveAll(all);
+  res.json(report);
+});
+
+// Assigning moves the report to "assigned" (via under_review if it is still new)
+app.post('/api/reports/:id/assign', requireAdmin, (req, res) => {
+  const all = db.getAll();
+  const report = all.find(r => r.id === req.params.id);
+  if (!report) return res.status(404).json({ error: 'Report not found' });
+  const team = String((req.body || {}).team || '');
+  if (TEAMS.indexOf(team) === -1) return res.status(400).json({ error: 'Unknown team' });
+  if (['resolved', 'rejected', 'duplicate'].indexOf(report.status) !== -1) {
+    return res.status(400).json({ error: 'This report is closed' });
+  }
+  const now = new Date().toISOString();
+  report.assignedTo = team;
+  if (report.status === 'submitted') {
+    report.status = 'under_review';
+    report.timeline.push({ at: now, status: 'under_review', note: 'Moved to review' });
+  }
+  if (report.status === 'under_review') {
+    report.status = 'assigned';
+    report.timeline.push({ at: now, status: 'assigned', note: 'Assigned to ' + team + ' (mocked team)' });
+  } else {
+    report.timeline.push({ at: now, status: report.status, note: 'Reassigned to ' + team + ' (mocked team)' });
+  }
+  db.saveAll(all);
+  res.json(report);
 });
 
 // WARNING: wipes ALL reports and reloads the 40 seed reports

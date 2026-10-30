@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CivicFlow - Officer dashboard</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body class="admin">
+  <div id="login" class="login">
+    <form id="login-form" class="card">
+      <h2>Officer login</h2>
+      <p class="hint">Mocked login: a shared PIN, not real security.</p>
+      <input id="pin" type="password" placeholder="PIN" autocomplete="off">
+      <p id="login-error" class="error" hidden></p>
+      <button type="submit">Open dashboard</button>
+    </form>
+  </div>
+
+  <div id="app" hidden>
+    <header class="topbar bar">
+      <h1>CivicFlow <span class="sub">Officer dashboard</span></h1>
+      <div class="badges">
+        <span class="badge">Teams: MOCKED</span>
+        <span class="badge">Auth: MOCKED</span>
+        <span class="badge ai" id="ai-badge">AI: …</span>
+        <button id="brief-btn" class="inline">Action Brief</button>
+        <button id="logout-btn" class="inline secondary">Log out</button>
+      </div>
+    </header>
+
+    <div class="layout">
+      <div id="admin-map"></div>
+      <aside class="side">
+        <div class="filters">
+          <select id="f-category"><option value="">All categories</option></select>
+          <select id="f-status"><option value="">All statuses</option></select>
+        </div>
+        <p id="count" class="hint"></p>
+        <ul id="list" class="rlist"></ul>
+      </aside>
+    </div>
+
+    <section id="detail" class="detail" hidden></section>
+    <section id="brief" class="modal" hidden></section>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/admin.js"></script>
+</body>
+</html>

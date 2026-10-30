@@ -1,7 +1,7 @@
 {
   "name": "civicflow",
   "version": "1.0.0",
-  "description": "",
+  "description": "CivicFlow: AI-assisted civic complaint triage (prototype)",
   "main": "index.js",
   "scripts": {
     "start": "node server.js"

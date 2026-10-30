@@ -101,6 +101,13 @@ form.addEventListener('submit', async function (e) {
     }
     document.getElementById('result-id').textContent = data.id;
     document.getElementById('track-link').href = '/track.html?id=' + encodeURIComponent(data.id);
+    const ai = data.ai;
+    document.getElementById('result-ai').innerHTML = ai ?
+      '<h3>What our AI understood <span class="badge ai">AI: ' + CF.esc(ai.mode) + '</span></h3>' +
+      '<p>' + CF.esc(ai.summary) + '</p>' +
+      '<p class="hint">Category: ' + CF.esc(CF.LABELS[ai.category] || ai.category) + '</p>' +
+      '<p>Priority: ' + CF.levelBadge(ai) + '</p>' + CF.reasonsList(ai) +
+      (ai.duplicateOf ? '<p class="hint">Looks similar to ' + CF.esc(ai.duplicateOf) + ' (' + CF.esc(ai.duplicateReason) + '). Linked, so officers see the pattern.</p>' : '') : '';
     form.hidden = true;
     resultBox.hidden = false;
   } catch (err) {

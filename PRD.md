@@ -119,4 +119,5 @@ Honest framing: the LLM extracts and rates factors, and deterministic code compu
 
 | Time | Change | Reason |
 |---|---|---|
-| | | |
+| P3/P4 | Added `GET /api/teams`, `GET /api/admin/check`; `assign` also moves a new report to `assigned` | Dashboard needs the team list and a PIN check; additive only, no frozen contract changed |
+| P3 | Added `admin.css`, `rawGemini` export in `ai.js` | Dashboard styling; brief reuses the same Gemini caller |
