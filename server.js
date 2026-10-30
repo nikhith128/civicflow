@@ -5,6 +5,8 @@ const path = require('path');
 const fs = require('fs');
 const multer = require('multer');
 const db = require('./src/db');
+const ai = require('./src/ai');
+const pipeline = require('./src/pipeline');
 
 const app = express();
 
@@ -30,6 +32,15 @@ function handleUpload(req, res, next) {
     }
     next();
   });
+}
+
+// Mocked admin check: a shared PIN from .env (clearly not real security)
+function requireAdmin(req, res, next) {
+  const pin = process.env.ADMIN_PIN;
+  if (!pin || req.get('x-admin-pin') !== pin) {
+    return res.status(401).json({ error: 'Admin PIN required' });
+  }
+  next();
 }
 
 app.use(express.json());
@@ -61,7 +72,7 @@ app.get('/api/reports/:id', (req, res) => {
   res.json(report);
 });
 
-app.post('/api/reports', handleUpload, (req, res) => {
+app.post('/api/reports', handleUpload, async (req, res) => {
   const body = req.body || {};
   const lat = parseFloat(body.lat);
   const lng = parseFloat(body.lng);
@@ -78,10 +89,13 @@ app.post('/api/reports', handleUpload, (req, res) => {
   if (categoryUser !== 'not_sure' && !CATEGORIES.includes(categoryUser)) {
     return res.status(400).json({ error: 'Unknown category' });
   }
-   if (!Number.isFinite(lat) || !Number.isFinite(lng) ||
+  if (!Number.isFinite(lat) || !Number.isFinite(lng) ||
       lat < -90 || lat > 90 || lng < -180 || lng > 180) {
     return res.status(400).json({ error: 'A valid location is required' });
   }
+
+  // AI first (can take a few seconds). The ID is chosen afterwards so two quick submissions never collide.
+  const analysis = await ai.analyzeReport({ description: description, categoryUser: categoryUser });
 
   const id = db.nextId(db.getAll());
   let imagePath = null;
@@ -107,12 +121,23 @@ app.post('/api/reports', handleUpload, (req, res) => {
     linkedReports: []
   };
 
-  db.addReport(report);
+  pipeline.saveAnalyzed(report, analysis);
   res.status(201).json(report);
+});
+
+// WARNING: wipes ALL reports and reloads the 40 seed reports
+app.post('/api/seed', requireAdmin, async (req, res) => {
+  const analysed = await pipeline.resetAndProcess();
+  res.json({ ok: true, reports: db.getAll().length, analysed: analysed });
 });
 
 const port = process.env.PORT || 3000;
 console.log('Reports loaded:', db.ensureSeeded());
-app.listen(port, () => {
-  console.log(`CivicFlow server listening on port ${port}`);
-});
+pipeline.processPending()
+  .then((n) => { if (n > 0) console.log('AI analysed ' + n + ' reports'); })
+  .catch((err) => console.warn('Startup AI step failed:', err.message))
+  .finally(() => {
+    app.listen(port, () => {
+      console.log(`CivicFlow server listening on port ${port}`);
+    });
+  });

@@ -10,7 +10,27 @@
       "lng": 74.858,
       "address": "Lakeview Road"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "drainage",
+      "summary": "Drain on Lakeview Road is completely blocked with plastic and mud, water is not flowing at all",
+      "factors": {
+        "safetyRisk": 0,
+        "peopleAffected": 1,
+        "vulnerableNearby": false,
+        "worsensWithTime": 2
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 25,
+      "priorityLevel": "Low",
+      "reasons": [
+        "A few people affected (+6)",
+        "Likely to get worse soon (+8)",
+        "1 similar report nearby (+5)",
+        "Open for 6 days (+6)"
+      ]
+    },
     "status": "under_review",
     "assignedTo": null,
     "timeline": [
@@ -25,7 +45,9 @@
         "note": "Moved to review"
       }
     ],
-    "linkedReports": []
+    "linkedReports": [
+      "CF-0006"
+    ]
   },
   {
     "id": "CF-0002",
@@ -38,7 +60,26 @@
       "lng": 74.8583,
       "address": "Lakeview Road"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "waterlogging",
+      "summary": "Knee-deep water on Lakeview Road after last night's rain, two-wheelers are stalling",
+      "factors": {
+        "safetyRisk": 0,
+        "peopleAffected": 1,
+        "vulnerableNearby": false,
+        "worsensWithTime": 0
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 16,
+      "priorityLevel": "Low",
+      "reasons": [
+        "A few people affected (+6)",
+        "1 similar report nearby (+5)",
+        "Open for 5 days (+5)"
+      ]
+    },
     "status": "assigned",
     "assignedTo": "Drainage Dept",
     "timeline": [
@@ -58,7 +99,9 @@
         "note": "Assigned to Drainage Dept"
       }
     ],
-    "linkedReports": []
+    "linkedReports": [
+      "CF-0003"
+    ]
   },
   {
     "id": "CF-0003",
@@ -71,7 +114,28 @@
       "lng": 74.8579,
       "address": "Lakeview Road, near bakery"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "waterlogging",
+      "summary": "Lakeview Road flooded again near the bakery, water has not drained for two days",
+      "factors": {
+        "safetyRisk": 2,
+        "peopleAffected": 1,
+        "vulnerableNearby": false,
+        "worsensWithTime": 3
+      },
+      "duplicateOf": "CF-0002",
+      "duplicateReason": "49 m away, shared words: lakeview, water",
+      "priorityScore": 47,
+      "priorityLevel": "Medium",
+      "reasons": [
+        "Moderate safety risk (+20)",
+        "A few people affected (+6)",
+        "Will get worse quickly if not fixed (+12)",
+        "1 similar report nearby (+5)",
+        "Open for 4 days (+4)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
@@ -81,7 +145,9 @@
         "note": "Report received"
       }
     ],
-    "linkedReports": []
+    "linkedReports": [
+      "CF-0002"
+    ]
   },
   {
     "id": "CF-0004",
@@ -94,7 +160,27 @@
       "lng": 74.8586,
       "address": "Lakeview Road"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "road_damage",
+      "summary": "Road surface is broken and sinking on Lakeview Road where the water keeps standing",
+      "factors": {
+        "safetyRisk": 1,
+        "peopleAffected": 1,
+        "vulnerableNearby": false,
+        "worsensWithTime": 2
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 27,
+      "priorityLevel": "Low",
+      "reasons": [
+        "Minor safety concern (+10)",
+        "A few people affected (+6)",
+        "Likely to get worse soon (+8)",
+        "Open for 3 days (+3)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
@@ -117,7 +203,26 @@
       "lng": 74.8577,
       "address": "Lakeview Road"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "garbage",
+      "summary": "Garbage dumped beside the Lakeview Road drain, bad smell and it is clogging the inlet",
+      "factors": {
+        "safetyRisk": 1,
+        "peopleAffected": 1,
+        "vulnerableNearby": false,
+        "worsensWithTime": 0
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 19,
+      "priorityLevel": "Low",
+      "reasons": [
+        "Minor safety concern (+10)",
+        "A few people affected (+6)",
+        "Open for 3 days (+3)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
@@ -140,7 +245,28 @@
       "lng": 74.8581,
       "address": "Lakeview Road"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "drainage",
+      "summary": "Drain cover is cracked on Lakeview Road, dirty water overflowing onto the footpath",
+      "factors": {
+        "safetyRisk": 1,
+        "peopleAffected": 1,
+        "vulnerableNearby": false,
+        "worsensWithTime": 3
+      },
+      "duplicateOf": "CF-0001",
+      "duplicateReason": "46 m away, shared words: drain, lakeview, water",
+      "priorityScore": 34,
+      "priorityLevel": "Medium",
+      "reasons": [
+        "Minor safety concern (+10)",
+        "A few people affected (+6)",
+        "Will get worse quickly if not fixed (+12)",
+        "1 similar report nearby (+5)",
+        "Open for 1 day (+1)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
@@ -150,7 +276,9 @@
         "note": "Report received"
       }
     ],
-    "linkedReports": []
+    "linkedReports": [
+      "CF-0001"
+    ]
   },
   {
     "id": "CF-0007",
@@ -163,7 +291,29 @@
       "lng": 74.852,
       "address": "School Road, primary school gate"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "road_damage",
+      "summary": "Big pothole right at the school gate on School Road, children and bikes are at risk",
+      "factors": {
+        "safetyRisk": 2,
+        "peopleAffected": 2,
+        "vulnerableNearby": true,
+        "worsensWithTime": 2
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 70,
+      "priorityLevel": "High",
+      "reasons": [
+        "Moderate safety risk (+20)",
+        "Many people affected (+12)",
+        "Near a school, hospital or other vulnerable place (+15)",
+        "Likely to get worse soon (+8)",
+        "2 similar reports nearby (+10)",
+        "Open for 5 days (+5)"
+      ]
+    },
     "status": "under_review",
     "assignedTo": null,
     "timeline": [
@@ -178,7 +328,10 @@
         "note": "Moved to review"
       }
     ],
-    "linkedReports": []
+    "linkedReports": [
+      "CF-0008",
+      "CF-0009"
+    ]
   },
   {
     "id": "CF-0008",
@@ -191,7 +344,28 @@
       "lng": 74.8523,
       "address": "School Road"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "road_damage",
+      "summary": "Deep hole in the road opposite the primary school entrance, a scooter fell this morning",
+      "factors": {
+        "safetyRisk": 3,
+        "peopleAffected": 2,
+        "vulnerableNearby": true,
+        "worsensWithTime": 0
+      },
+      "duplicateOf": "CF-0007",
+      "duplicateReason": "39 m away, shared words: pothole, school, gate",
+      "priorityScore": 64,
+      "priorityLevel": "High",
+      "reasons": [
+        "Serious safety risk (danger of injury) (+30)",
+        "Many people affected (+12)",
+        "Near a school, hospital or other vulnerable place (+15)",
+        "1 similar report nearby (+5)",
+        "Open for 2 days (+2)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
@@ -201,7 +375,9 @@
         "note": "Report received"
       }
     ],
-    "linkedReports": []
+    "linkedReports": [
+      "CF-0007"
+    ]
   },
   {
     "id": "CF-0009",
@@ -214,7 +390,29 @@
       "lng": 74.8519,
       "address": "School Road"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "road_damage",
+      "summary": "School Road pothole is getting bigger every day, near the school gate",
+      "factors": {
+        "safetyRisk": 2,
+        "peopleAffected": 2,
+        "vulnerableNearby": true,
+        "worsensWithTime": 2
+      },
+      "duplicateOf": "CF-0007",
+      "duplicateReason": "16 m away, shared words: school, pothole, gate",
+      "priorityScore": 61,
+      "priorityLevel": "High",
+      "reasons": [
+        "Moderate safety risk (+20)",
+        "Many people affected (+12)",
+        "Near a school, hospital or other vulnerable place (+15)",
+        "Likely to get worse soon (+8)",
+        "1 similar report nearby (+5)",
+        "Open for 1 day (+1)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
@@ -224,7 +422,9 @@
         "note": "Report received"
       }
     ],
-    "linkedReports": []
+    "linkedReports": [
+      "CF-0007"
+    ]
   },
   {
     "id": "CF-0010",
@@ -237,7 +437,28 @@
       "lng": 74.8545,
       "address": "Temple Street"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "streetlight",
+      "summary": "Street light not working on Temple Street, the whole stretch is dark at night",
+      "factors": {
+        "safetyRisk": 2,
+        "peopleAffected": 3,
+        "vulnerableNearby": false,
+        "worsensWithTime": 1
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 54,
+      "priorityLevel": "Medium",
+      "reasons": [
+        "Moderate safety risk (+20)",
+        "A large number of people affected (+18)",
+        "May get worse over time (+4)",
+        "1 similar report nearby (+5)",
+        "Open for 7 days (+7)"
+      ]
+    },
     "status": "assigned",
     "assignedTo": "Electrical Dept",
     "timeline": [
@@ -257,7 +478,9 @@
         "note": "Assigned to Electrical Dept"
       }
     ],
-    "linkedReports": []
+    "linkedReports": [
+      "CF-0011"
+    ]
   },
   {
     "id": "CF-0011",
@@ -270,7 +493,28 @@
       "lng": 74.8547,
       "address": "Temple Street"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "streetlight",
+      "summary": "Temple Street lamp post has been dead for a week, women walking home feel unsafe",
+      "factors": {
+        "safetyRisk": 2,
+        "peopleAffected": 1,
+        "vulnerableNearby": false,
+        "worsensWithTime": 1
+      },
+      "duplicateOf": "CF-0010",
+      "duplicateReason": "24 m away, shared words: temple, light",
+      "priorityScore": 38,
+      "priorityLevel": "Medium",
+      "reasons": [
+        "Moderate safety risk (+20)",
+        "A few people affected (+6)",
+        "May get worse over time (+4)",
+        "1 similar report nearby (+5)",
+        "Open for 3 days (+3)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
@@ -280,7 +524,9 @@
         "note": "Report received"
       }
     ],
-    "linkedReports": []
+    "linkedReports": [
+      "CF-0010"
+    ]
   },
   {
     "id": "CF-0012",
@@ -293,7 +539,28 @@
       "lng": 74.86,
       "address": "Market Road"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "garbage",
+      "summary": "Market bin is overflowing, garbage spilling onto the road and flies everywhere",
+      "factors": {
+        "safetyRisk": 1,
+        "peopleAffected": 2,
+        "vulnerableNearby": false,
+        "worsensWithTime": 3
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 48,
+      "priorityLevel": "Medium",
+      "reasons": [
+        "Minor safety concern (+10)",
+        "Many people affected (+12)",
+        "Will get worse quickly if not fixed (+12)",
+        "2 similar reports nearby (+10)",
+        "Open for 4 days (+4)"
+      ]
+    },
     "status": "assigned",
     "assignedTo": "Sanitation Dept",
     "timeline": [
@@ -313,7 +580,10 @@
         "note": "Assigned to Sanitation Dept"
       }
     ],
-    "linkedReports": []
+    "linkedReports": [
+      "CF-0013",
+      "CF-0014"
+    ]
   },
   {
     "id": "CF-0013",
@@ -326,7 +596,28 @@
       "lng": 74.8602,
       "address": "Market Road, vegetable market"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "garbage",
+      "summary": "Community bin near the vegetable market has not been cleared for days and is overflowing",
+      "factors": {
+        "safetyRisk": 1,
+        "peopleAffected": 2,
+        "vulnerableNearby": false,
+        "worsensWithTime": 3
+      },
+      "duplicateOf": "CF-0012",
+      "duplicateReason": "31 m away, shared words: bin, market, overflowing",
+      "priorityScore": 42,
+      "priorityLevel": "Medium",
+      "reasons": [
+        "Minor safety concern (+10)",
+        "Many people affected (+12)",
+        "Will get worse quickly if not fixed (+12)",
+        "1 similar report nearby (+5)",
+        "Open for 3 days (+3)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
@@ -336,7 +627,9 @@
         "note": "Report received"
       }
     ],
-    "linkedReports": []
+    "linkedReports": [
+      "CF-0012"
+    ]
   },
   {
     "id": "CF-0014",
@@ -349,7 +642,27 @@
       "lng": 74.8598,
       "address": "Market Road"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "garbage",
+      "summary": "Rotting waste piled next to the market bin, stray dogs are tearing the bags open",
+      "factors": {
+        "safetyRisk": 0,
+        "peopleAffected": 2,
+        "vulnerableNearby": false,
+        "worsensWithTime": 2
+      },
+      "duplicateOf": "CF-0012",
+      "duplicateReason": "24 m away, shared words: market, bin",
+      "priorityScore": 26,
+      "priorityLevel": "Low",
+      "reasons": [
+        "Many people affected (+12)",
+        "Likely to get worse soon (+8)",
+        "1 similar report nearby (+5)",
+        "Open for 1 day (+1)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
@@ -359,7 +672,9 @@
         "note": "Report received"
       }
     ],
-    "linkedReports": []
+    "linkedReports": [
+      "CF-0012"
+    ]
   },
   {
     "id": "CF-0015",
@@ -372,7 +687,25 @@
       "lng": 74.861,
       "address": "Bus Stop Junction"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "drainage",
+      "summary": "Open manhole without a cover at the bus stop junction, someone could fall in, especially at night",
+      "factors": {
+        "safetyRisk": 3,
+        "peopleAffected": 2,
+        "vulnerableNearby": false,
+        "worsensWithTime": 0
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 42,
+      "priorityLevel": "Medium",
+      "reasons": [
+        "Serious safety risk (danger of injury) (+30)",
+        "Many people affected (+12)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
@@ -395,7 +728,27 @@
       "lng": 74.857,
       "address": "Park Lane, children's park"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "other",
+      "summary": "Electric wire hanging low and sparking near the children's park gate after the storm",
+      "factors": {
+        "safetyRisk": 3,
+        "peopleAffected": 2,
+        "vulnerableNearby": true,
+        "worsensWithTime": 3
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 69,
+      "priorityLevel": "High",
+      "reasons": [
+        "Serious safety risk (danger of injury) (+30)",
+        "Many people affected (+12)",
+        "Near a school, hospital or other vulnerable place (+15)",
+        "Will get worse quickly if not fixed (+12)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
@@ -418,7 +771,25 @@
       "lng": 74.8595,
       "address": "Garden Road"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "other",
+      "summary": "Large tree fell across Garden Road blocking all traffic, branches resting on a parked car",
+      "factors": {
+        "safetyRisk": 3,
+        "peopleAffected": 3,
+        "vulnerableNearby": false,
+        "worsensWithTime": 0
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 48,
+      "priorityLevel": "Medium",
+      "reasons": [
+        "Serious safety risk (danger of injury) (+30)",
+        "A large number of people affected (+18)"
+      ]
+    },
     "status": "under_review",
     "assignedTo": null,
     "timeline": [
@@ -446,7 +817,26 @@
       "lng": 74.854,
       "address": "Railway Underpass"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "waterlogging",
+      "summary": "Underpass is completely flooded, a car is stuck in the water with people inside",
+      "factors": {
+        "safetyRisk": 3,
+        "peopleAffected": 3,
+        "vulnerableNearby": false,
+        "worsensWithTime": 3
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 60,
+      "priorityLevel": "High",
+      "reasons": [
+        "Serious safety risk (danger of injury) (+30)",
+        "A large number of people affected (+18)",
+        "Will get worse quickly if not fixed (+12)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
@@ -469,7 +859,28 @@
       "lng": 74.8605,
       "address": "Bus Stand"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "road_damage",
+      "summary": "Footpath tiles broken near the bus stand, elderly people trip often",
+      "factors": {
+        "safetyRisk": 2,
+        "peopleAffected": 2,
+        "vulnerableNearby": true,
+        "worsensWithTime": 1
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 61,
+      "priorityLevel": "High",
+      "reasons": [
+        "Moderate safety risk (+20)",
+        "Many people affected (+12)",
+        "Near a school, hospital or other vulnerable place (+15)",
+        "May get worse over time (+4)",
+        "Open for 12 days (+10)"
+      ]
+    },
     "status": "resolved",
     "assignedTo": "Roads Dept",
     "timeline": [
@@ -512,7 +923,25 @@
       "lng": 74.853,
       "address": "College Road"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "road_damage",
+      "summary": "Speed breaker paint has faded, vehicles do not see it at night",
+      "factors": {
+        "safetyRisk": 0,
+        "peopleAffected": 1,
+        "vulnerableNearby": false,
+        "worsensWithTime": 0
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 15,
+      "priorityLevel": "Low",
+      "reasons": [
+        "A few people affected (+6)",
+        "Open for 9 days (+9)"
+      ]
+    },
     "status": "assigned",
     "assignedTo": "Roads Dept",
     "timeline": [
@@ -545,7 +974,27 @@
       "lng": 74.8625,
       "address": "Station Road"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "road_damage",
+      "summary": "Small pothole on Station Road near the post office",
+      "factors": {
+        "safetyRisk": 2,
+        "peopleAffected": 1,
+        "vulnerableNearby": false,
+        "worsensWithTime": 2
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 42,
+      "priorityLevel": "Medium",
+      "reasons": [
+        "Moderate safety risk (+20)",
+        "A few people affected (+6)",
+        "Likely to get worse soon (+8)",
+        "Open for 8 days (+8)"
+      ]
+    },
     "status": "in_progress",
     "assignedTo": "Roads Dept",
     "timeline": [
@@ -583,7 +1032,26 @@
       "lng": 74.8535,
       "address": "Behind community hall"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "garbage",
+      "summary": "Plastic waste is being burnt in the empty plot behind the community hall, thick smoke",
+      "factors": {
+        "safetyRisk": 2,
+        "peopleAffected": 1,
+        "vulnerableNearby": false,
+        "worsensWithTime": 0
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 32,
+      "priorityLevel": "Medium",
+      "reasons": [
+        "Moderate safety risk (+20)",
+        "A few people affected (+6)",
+        "Open for 6 days (+6)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
@@ -606,7 +1074,25 @@
       "lng": 74.8575,
       "address": "Park Lane"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "garbage",
+      "summary": "Dustbin is missing at the park entrance, people litter on the grass",
+      "factors": {
+        "safetyRisk": 0,
+        "peopleAffected": 2,
+        "vulnerableNearby": false,
+        "worsensWithTime": 0
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 22,
+      "priorityLevel": "Low",
+      "reasons": [
+        "Many people affected (+12)",
+        "Open for 10 days (+10)"
+      ]
+    },
     "status": "resolved",
     "assignedTo": "Sanitation Dept",
     "timeline": [
@@ -649,7 +1135,25 @@
       "lng": 74.856,
       "address": "Near temple gate"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "streetlight",
+      "summary": "Flickering street light near the temple gate",
+      "factors": {
+        "safetyRisk": 0,
+        "peopleAffected": 1,
+        "vulnerableNearby": false,
+        "worsensWithTime": 0
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 11,
+      "priorityLevel": "Low",
+      "reasons": [
+        "A few people affected (+6)",
+        "Open for 5 days (+5)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
@@ -672,7 +1176,25 @@
       "lng": 74.856,
       "address": "Water tank road"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "streetlight",
+      "summary": "Street light stays on all day near the water tank, wasting power",
+      "factors": {
+        "safetyRisk": 0,
+        "peopleAffected": 1,
+        "vulnerableNearby": false,
+        "worsensWithTime": 0
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 16,
+      "priorityLevel": "Low",
+      "reasons": [
+        "A few people affected (+6)",
+        "Open for 11 days (+10)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
@@ -695,7 +1217,26 @@
       "lng": 74.859,
       "address": "South Colony Road"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "drainage",
+      "summary": "Roadside drain is full of weeds and silt, mosquitoes are breeding",
+      "factors": {
+        "safetyRisk": 0,
+        "peopleAffected": 1,
+        "vulnerableNearby": false,
+        "worsensWithTime": 2
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 21,
+      "priorityLevel": "Low",
+      "reasons": [
+        "A few people affected (+6)",
+        "Likely to get worse soon (+8)",
+        "Open for 7 days (+7)"
+      ]
+    },
     "status": "under_review",
     "assignedTo": null,
     "timeline": [
@@ -723,7 +1264,27 @@
       "lng": 74.857,
       "address": "Apartment Lane"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "drainage",
+      "summary": "Sewage smell near the apartment lane, the drain seems partly blocked",
+      "factors": {
+        "safetyRisk": 2,
+        "peopleAffected": 1,
+        "vulnerableNearby": false,
+        "worsensWithTime": 2
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 38,
+      "priorityLevel": "Medium",
+      "reasons": [
+        "Moderate safety risk (+20)",
+        "A few people affected (+6)",
+        "Likely to get worse soon (+8)",
+        "Open for 4 days (+4)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
@@ -746,7 +1307,25 @@
       "lng": 74.86,
       "address": "Sports ground entrance"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "waterlogging",
+      "summary": "Water collects near the ground entrance after any rain",
+      "factors": {
+        "safetyRisk": 0,
+        "peopleAffected": 1,
+        "vulnerableNearby": false,
+        "worsensWithTime": 0
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 12,
+      "priorityLevel": "Low",
+      "reasons": [
+        "A few people affected (+6)",
+        "Open for 6 days (+6)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
@@ -769,7 +1348,27 @@
       "lng": 74.852,
       "address": "Clinic Road"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "waterlogging",
+      "summary": "Puddle in front of the clinic never dries, slippery for patients",
+      "factors": {
+        "safetyRisk": 2,
+        "peopleAffected": 2,
+        "vulnerableNearby": true,
+        "worsensWithTime": 0
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 50,
+      "priorityLevel": "Medium",
+      "reasons": [
+        "Moderate safety risk (+20)",
+        "Many people affected (+12)",
+        "Near a school, hospital or other vulnerable place (+15)",
+        "Open for 3 days (+3)"
+      ]
+    },
     "status": "assigned",
     "assignedTo": "Drainage Dept",
     "timeline": [
@@ -802,7 +1401,27 @@
       "lng": 74.8615,
       "address": "Bus Stand"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "public_service",
+      "summary": "Public tap near the bus stand has been leaking for days, water is wasted",
+      "factors": {
+        "safetyRisk": 1,
+        "peopleAffected": 2,
+        "vulnerableNearby": false,
+        "worsensWithTime": 2
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 39,
+      "priorityLevel": "Medium",
+      "reasons": [
+        "Minor safety concern (+10)",
+        "Many people affected (+12)",
+        "Likely to get worse soon (+8)",
+        "Open for 9 days (+9)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
@@ -825,7 +1444,27 @@
       "lng": 74.8575,
       "address": "Highway bus shelter"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "public_service",
+      "summary": "Bus shelter roof is broken, no shade or rain protection for commuters",
+      "factors": {
+        "safetyRisk": 1,
+        "peopleAffected": 2,
+        "vulnerableNearby": false,
+        "worsensWithTime": 1
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 36,
+      "priorityLevel": "Medium",
+      "reasons": [
+        "Minor safety concern (+10)",
+        "Many people affected (+12)",
+        "May get worse over time (+4)",
+        "Open for 14 days (+10)"
+      ]
+    },
     "status": "assigned",
     "assignedTo": "General Services",
     "timeline": [
@@ -858,7 +1497,25 @@
       "lng": 74.8595,
       "address": "Market Road"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "public_service",
+      "summary": "Public toilet near the market has no water supply",
+      "factors": {
+        "safetyRisk": 0,
+        "peopleAffected": 2,
+        "vulnerableNearby": false,
+        "worsensWithTime": 0
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 20,
+      "priorityLevel": "Low",
+      "reasons": [
+        "Many people affected (+12)",
+        "Open for 8 days (+8)"
+      ]
+    },
     "status": "under_review",
     "assignedTo": null,
     "timeline": [
@@ -886,7 +1543,27 @@
       "lng": 74.8515,
       "address": "School Lane"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "other",
+      "summary": "Stray dogs gathering near the school lane, children are scared to walk",
+      "factors": {
+        "safetyRisk": 2,
+        "peopleAffected": 2,
+        "vulnerableNearby": true,
+        "worsensWithTime": 0
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 50,
+      "priorityLevel": "Medium",
+      "reasons": [
+        "Moderate safety risk (+20)",
+        "Many people affected (+12)",
+        "Near a school, hospital or other vulnerable place (+15)",
+        "Open for 3 days (+3)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
@@ -909,7 +1586,26 @@
       "lng": 74.864,
       "address": "Main Junction"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "other",
+      "summary": "Illegal posters and banners are blocking the view at the junction",
+      "factors": {
+        "safetyRisk": 2,
+        "peopleAffected": 3,
+        "vulnerableNearby": false,
+        "worsensWithTime": 0
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 43,
+      "priorityLevel": "Medium",
+      "reasons": [
+        "Moderate safety risk (+20)",
+        "A large number of people affected (+18)",
+        "Open for 5 days (+5)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
@@ -932,7 +1628,27 @@
       "lng": 74.8568,
       "address": "Park Lane"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "other",
+      "summary": "Park benches are broken and unsafe to sit on",
+      "factors": {
+        "safetyRisk": 2,
+        "peopleAffected": 2,
+        "vulnerableNearby": false,
+        "worsensWithTime": 1
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 46,
+      "priorityLevel": "Medium",
+      "reasons": [
+        "Moderate safety risk (+20)",
+        "Many people affected (+12)",
+        "May get worse over time (+4)",
+        "Open for 13 days (+10)"
+      ]
+    },
     "status": "resolved",
     "assignedTo": "General Services",
     "timeline": [
@@ -975,7 +1691,26 @@
       "lng": 74.863,
       "address": "Culvert Road"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "road_damage",
+      "summary": "Road edge has crumbled near the culvert, vehicles scrape the side",
+      "factors": {
+        "safetyRisk": 0,
+        "peopleAffected": 1,
+        "vulnerableNearby": false,
+        "worsensWithTime": 2
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 24,
+      "priorityLevel": "Low",
+      "reasons": [
+        "A few people affected (+6)",
+        "Likely to get worse soon (+8)",
+        "Open for 10 days (+10)"
+      ]
+    },
     "status": "in_progress",
     "assignedTo": "Roads Dept",
     "timeline": [
@@ -1013,7 +1748,25 @@
       "lng": 74.8545,
       "address": "Pharmacy Street"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "road_damage",
+      "summary": "Manhole cover has sunk below road level near the pharmacy, causes a bump",
+      "factors": {
+        "safetyRisk": 0,
+        "peopleAffected": 1,
+        "vulnerableNearby": false,
+        "worsensWithTime": 0
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 12,
+      "priorityLevel": "Low",
+      "reasons": [
+        "A few people affected (+6)",
+        "Open for 6 days (+6)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
@@ -1036,7 +1789,28 @@
       "lng": 74.8545,
       "address": "Playground Road"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "streetlight",
+      "summary": "New street light needed at the dark stretch by the playground",
+      "factors": {
+        "safetyRisk": 2,
+        "peopleAffected": 1,
+        "vulnerableNearby": true,
+        "worsensWithTime": 1
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 55,
+      "priorityLevel": "High",
+      "reasons": [
+        "Moderate safety risk (+20)",
+        "A few people affected (+6)",
+        "Near a school, hospital or other vulnerable place (+15)",
+        "May get worse over time (+4)",
+        "Open for 15 days (+10)"
+      ]
+    },
     "status": "rejected",
     "assignedTo": null,
     "timeline": [
@@ -1069,7 +1843,26 @@
       "lng": 74.8565,
       "address": "Apartment Lane"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "drainage",
+      "summary": "Water from the apartment overflows into the lane every morning",
+      "factors": {
+        "safetyRisk": 1,
+        "peopleAffected": 1,
+        "vulnerableNearby": false,
+        "worsensWithTime": 0
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 18,
+      "priorityLevel": "Low",
+      "reasons": [
+        "Minor safety concern (+10)",
+        "A few people affected (+6)",
+        "Open for 2 days (+2)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
@@ -1092,7 +1885,25 @@
       "lng": 74.8565,
       "address": "Water tank road"
     },
-    "ai": null,
+    "ai": {
+      "mode": "fallback",
+      "category": "garbage",
+      "summary": "Construction debris dumped on the roadside near the water tank",
+      "factors": {
+        "safetyRisk": 0,
+        "peopleAffected": 1,
+        "vulnerableNearby": false,
+        "worsensWithTime": 0
+      },
+      "duplicateOf": null,
+      "duplicateReason": null,
+      "priorityScore": 10,
+      "priorityLevel": "Low",
+      "reasons": [
+        "A few people affected (+6)",
+        "Open for 4 days (+4)"
+      ]
+    },
     "status": "submitted",
     "assignedTo": null,
     "timeline": [
