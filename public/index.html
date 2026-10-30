@@ -17,36 +17,44 @@
   </header>
 
   <main class="container">
+    <section class="page-intro">
+      <span class="eyebrow">CIVICFLOW · COMMUNITY REPORTING</span>
+      <h2>What needs fixing?</h2>
+      <p>Tell us what happened and mark where. You can follow the update with your report ID.</p>
+    </section>
     <form id="report-form" novalidate>
-      <label for="description">What is the problem?</label>
-      <textarea id="description" rows="4" maxlength="1000" placeholder="e.g. Deep pothole near the school gate"></textarea>
+      <label for="description">Describe the problem</label>
+      <textarea id="description" rows="4" maxlength="1000" placeholder="For example: A deep pothole near the school gate" required></textarea>
+      <p class="hint">A few details help the city understand what needs attention.</p>
 
-      <label for="photo">Photo (optional)</label>
-      <input id="photo" type="file" accept="image/*">
-      <p class="hint">JPG, PNG or WebP, up to 5 MB.</p>
-
-      <label for="category">Category</label>
-      <select id="category">
-        <option value="not_sure">Not sure</option>
-        <option value="road_damage">Road damage</option>
-        <option value="waterlogging">Waterlogging</option>
-        <option value="garbage">Garbage</option>
-        <option value="streetlight">Streetlight</option>
-        <option value="drainage">Drainage</option>
-        <option value="public_service">Public service</option>
-        <option value="other">Other</option>
-      </select>
-
-      <label>Location</label>
-      <button type="button" id="locate-btn" class="secondary">Use my location</button>
+      <div class="location-heading"><label>Where is it?</label><button type="button" id="locate-btn" class="secondary">Use my location</button></div>
       <div id="map"></div>
       <p id="location-text" class="hint">Tap the map to drop a pin.</p>
 
-      <label for="address">Landmark or address (optional)</label>
-      <input id="address" type="text" maxlength="200" placeholder="e.g. Near the bus stop">
+      <details class="optional-details">
+        <summary>Add optional details</summary>
+        <div class="optional-content">
+          <label for="category">Category</label>
+          <select id="category">
+            <option value="not_sure">Not sure</option>
+            <option value="road_damage">Road damage</option>
+            <option value="waterlogging">Waterlogging</option>
+            <option value="garbage">Garbage</option>
+            <option value="streetlight">Streetlight</option>
+            <option value="drainage">Drainage</option>
+            <option value="public_service">Public service</option>
+            <option value="other">Other</option>
+          </select>
+          <label for="address">Landmark or address</label>
+          <input id="address" type="text" maxlength="200" placeholder="For example: Near the bus stop">
+          <label for="photo">Add a photo</label>
+          <input id="photo" type="file" accept="image/jpeg,image/png,image/webp">
+          <p class="hint">JPG, PNG or WebP, up to 5 MB.</p>
+        </div>
+      </details>
 
       <p id="error" class="error" hidden></p>
-      <button type="submit" id="submit-btn">Submit report</button>
+      <button type="submit" id="submit-btn">Send report</button>
     </form>
 
     <section id="result" class="card" hidden>

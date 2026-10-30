@@ -16,6 +16,7 @@ button.inline.secondary:hover { background: var(--sage); }
 .layout { display: grid; grid-template-columns: 1fr 420px; height: calc(100vh - var(--bar)); }
 #admin-map { height: 100%; }
 .side { overflow-y: auto; padding: 14px; background: var(--bg); border-left: 1px solid var(--line); }
+.side > .hint { padding: 2px 2px 8px; }
 .filters { display: flex; gap: 8px; }
 .filters select { padding: 9px 10px; font-size: 0.9rem; }
 
@@ -33,7 +34,8 @@ button.inline.secondary:hover { background: var(--sage); }
 }
 .rlist li:hover { box-shadow: var(--shadow); transform: translateY(-1px); }
 .rlist li.sel { background: var(--sage); }
-.rlist .top { display: flex; justify-content: space-between; align-items: center; gap: 6px; }
+.rlist .top { display: flex; justify-content: flex-start; align-items: center; gap: 6px; flex-wrap: wrap; }
+.rlist .top .pill { margin-left: auto; }
 .rlist .top strong { font-family: var(--font-head); }
 .rlist .sum { margin: 6px 0 4px; font-size: 0.93rem; }
 
@@ -68,6 +70,11 @@ button.inline.secondary:hover { background: var(--sage); }
 .modal li { margin-bottom: 12px; }
 
 .leaflet-tooltip { font-family: var(--font-body); border-radius: 8px; border: 0; box-shadow: var(--shadow); }
+
+@media (max-width: 800px) {
+  .side { padding: 12px; border-left: 0; border-top: 1px solid var(--line); }
+  .rlist li { padding: 12px; }
+}
 
 @media (max-width: 800px) {
   .layout { grid-template-columns: 1fr; grid-template-rows: 320px auto; height: auto; }

@@ -78,9 +78,13 @@ a { color: var(--pine); text-underline-offset: 3px; }
 .sitenav a.active { background: var(--pine); color: #fff; }
 
 /* ---- layout ---- */
-.container { max-width: 520px; margin: 0 auto; padding: 18px 16px 40px; }
+.container { max-width: 620px; margin: 0 auto; padding: 28px 18px 48px; }
+.page-intro { padding: 4px 4px 18px; }
+.page-intro .eyebrow { color: var(--pine); font-size: .72rem; font-weight: 700; letter-spacing: .12em; }
+.page-intro h2 { margin: 6px 0 4px; font-size: clamp(1.65rem, 5vw, 2.1rem); }
+.page-intro p { max-width: 48ch; margin: 0; color: var(--muted); }
 
-#report-form, #track-form { background: var(--paper); border-radius: var(--r-lg); padding: 8px 18px 20px; box-shadow: var(--shadow); }
+#report-form, #track-form { background: var(--paper); border-radius: var(--r-lg); padding: 12px 22px 22px; box-shadow: var(--shadow); }
 #track-form { padding-bottom: 18px; margin-bottom: 14px; }
 
 label { display: block; margin: 16px 0 6px; font-weight: 600; font-size: 0.95rem; }
@@ -100,12 +104,18 @@ textarea:focus, select:focus, input:focus { outline: none; border-color: var(--p
 input[type="file"] { padding: 9px; font-size: 0.9rem; }
 
 #map {
-  height: 260px;
+  height: 230px;
   margin-top: 8px;
   border-radius: var(--r-md);
   border: 1px solid var(--line);
   overflow: hidden;
 }
+.location-heading { display: flex; justify-content: space-between; align-items: end; gap: 12px; margin-top: 14px; }
+.location-heading label { margin-bottom: 6px; }
+.location-heading button.secondary { width: auto; margin: 0 0 6px; padding: 7px 11px; font-size: .85rem; }
+.optional-details { margin-top: 18px; border-top: 1px solid var(--line); }
+.optional-details summary { cursor: pointer; padding: 14px 2px 2px; color: var(--pine); font-weight: 650; }
+.optional-content { padding-bottom: 4px; }
 .leaflet-tile-pane { filter: saturate(.7) contrast(.96) brightness(1.02); }
 
 button {
@@ -160,10 +170,17 @@ button:disabled { opacity: 0.55; cursor: not-allowed; }
 .timeline li:last-child::before { background: var(--paper); border: 3px solid var(--pine); width: 14px; height: 14px; left: -28px; top: 4px; box-shadow: 0 0 0 3px var(--sage); }
 
 .photo { max-width: 100%; border-radius: var(--r-md); margin: 8px 0; }
+.page-intro + #track-form { margin-top: 2px; }
+.track-link { text-align: center; margin: 18px 0; }
 
 .badge { display: inline-block; font-size: 0.74rem; font-weight: 700; padding: 2px 9px; border-radius: 8px; background: var(--warn-tint); color: var(--warn-ink); }
 .badge.ai { background: var(--ai-tint); color: var(--ai); }
 
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
+}
+@media (max-width: 520px) {
+  .container { padding: 18px 12px 32px; }
+  #report-form, #track-form { padding: 10px 16px 18px; }
+  #map { height: 210px; }
 }
