@@ -13,48 +13,65 @@
 <body>
   <header class="topbar">
     <h1>CivicFlow</h1>
-    <p>Tell us what's wrong and where. You'll get an ID to follow the fix.</p>
   </header>
 
   <main class="container">
-    <section class="page-intro">
-      <span class="eyebrow">CIVICFLOW · COMMUNITY REPORTING</span>
-      <h2>What needs fixing?</h2>
-      <p>Tell us what happened and mark where. You can follow the update with your report ID.</p>
+    <section class="hero" aria-label="Introduction">
+      <h2>See something broken? Tell us in a minute.</h2>
+      <p>Drop a pin on the map. We rank what is urgent, and you can follow the fix.</p>
+      <svg viewBox="0 0 400 96" role="img" aria-label="City skyline with a streetlight">
+        <rect x="0" y="86" width="400" height="10" fill="#123A34"/>
+        <rect x="14" y="44" width="46" height="46" rx="3" fill="#2A6A5F"/>
+        <rect x="68" y="28" width="38" height="62" rx="3" fill="#3A7D70"/>
+        <rect x="114" y="52" width="52" height="38" rx="3" fill="#2A6A5F"/>
+        <rect x="236" y="36" width="44" height="54" rx="3" fill="#3A7D70"/>
+        <rect x="288" y="20" width="36" height="70" rx="3" fill="#2A6A5F"/>
+        <rect x="332" y="48" width="54" height="42" rx="3" fill="#3A7D70"/>
+        <g fill="#8FC4B6" opacity=".7">
+          <rect x="22" y="52" width="7" height="7"/><rect x="38" y="52" width="7" height="7"/><rect x="22" y="68" width="7" height="7"/>
+          <rect x="76" y="38" width="7" height="7"/><rect x="90" y="38" width="7" height="7"/><rect x="76" y="56" width="7" height="7"/><rect x="90" y="74" width="7" height="7"/>
+          <rect x="124" y="60" width="7" height="7"/><rect x="144" y="60" width="7" height="7"/>
+          <rect x="246" y="46" width="7" height="7"/><rect x="262" y="64" width="7" height="7"/>
+          <rect x="296" y="30" width="7" height="7"/><rect x="308" y="48" width="7" height="7"/><rect x="296" y="66" width="7" height="7"/>
+          <rect x="342" y="56" width="7" height="7"/><rect x="364" y="72" width="7" height="7"/>
+        </g>
+        <rect x="197" y="30" width="4" height="58" fill="#0E2C27"/>
+        <path d="M199 32 q-12 0 -16 8" stroke="#0E2C27" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <circle class="glow" cx="183" cy="43" r="14" fill="#F2C230" opacity=".35"/>
+        <circle cx="183" cy="42" r="5" fill="#F2C230"/>
+      </svg>
     </section>
-    <form id="report-form" novalidate>
-      <label for="description">Describe the problem</label>
-      <textarea id="description" rows="4" maxlength="1000" placeholder="For example: A deep pothole near the school gate" required></textarea>
-      <p class="hint">A few details help the city understand what needs attention.</p>
 
-      <div class="location-heading"><label>Where is it?</label><button type="button" id="locate-btn" class="secondary">Use my location</button></div>
+    <form id="report-form" novalidate>
+      <label for="description">What is the problem?</label>
+      <textarea id="description" rows="4" maxlength="1000" placeholder="e.g. Deep pothole near the school gate"></textarea>
+
+      <label for="photo">Photo (optional)</label>
+      <input id="photo" type="file" accept="image/*">
+      <p class="hint">JPG, PNG or WebP, up to 5 MB.</p>
+
+      <label for="category">Category</label>
+      <select id="category">
+        <option value="not_sure">Not sure</option>
+        <option value="road_damage">Road damage</option>
+        <option value="waterlogging">Waterlogging</option>
+        <option value="garbage">Garbage</option>
+        <option value="streetlight">Streetlight</option>
+        <option value="drainage">Drainage</option>
+        <option value="public_service">Public service</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label>Location</label>
+      <button type="button" id="locate-btn" class="secondary">Use my location</button>
       <div id="map"></div>
       <p id="location-text" class="hint">Tap the map to drop a pin.</p>
 
-      <details class="optional-details">
-        <summary>Add optional details</summary>
-        <div class="optional-content">
-          <label for="category">Category</label>
-          <select id="category">
-            <option value="not_sure">Not sure</option>
-            <option value="road_damage">Road damage</option>
-            <option value="waterlogging">Waterlogging</option>
-            <option value="garbage">Garbage</option>
-            <option value="streetlight">Streetlight</option>
-            <option value="drainage">Drainage</option>
-            <option value="public_service">Public service</option>
-            <option value="other">Other</option>
-          </select>
-          <label for="address">Landmark or address</label>
-          <input id="address" type="text" maxlength="200" placeholder="For example: Near the bus stop">
-          <label for="photo">Add a photo</label>
-          <input id="photo" type="file" accept="image/jpeg,image/png,image/webp">
-          <p class="hint">JPG, PNG or WebP, up to 5 MB.</p>
-        </div>
-      </details>
+      <label for="address">Landmark or address (optional)</label>
+      <input id="address" type="text" maxlength="200" placeholder="e.g. Near the bus stop">
 
       <p id="error" class="error" hidden></p>
-      <button type="submit" id="submit-btn">Send report</button>
+      <button type="submit" id="submit-btn">Submit report</button>
     </form>
 
     <section id="result" class="card" hidden>

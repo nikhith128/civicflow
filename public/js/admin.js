@@ -83,7 +83,19 @@ function filtered() {
 }
 
 // ---------- list + map ----------
+function renderStats() {
+  const open = reports.filter(function (r) { return ['resolved', 'rejected', 'duplicate'].indexOf(r.status) === -1; });
+  const urgent = open.filter(function (r) { return r.ai && (r.ai.priorityLevel === 'High' || r.ai.priorityLevel === 'Critical'); });
+  const done = reports.filter(function (r) { return r.status === 'resolved'; });
+  $('stats').innerHTML =
+    '<div class="stat open"><b>' + open.length + '</b><span>Open</span></div>' +
+    '<div class="stat urgent"><b>' + urgent.length + '</b><span>Urgent</span></div>' +
+    '<div class="stat hot"><b>' + hotspots.length + '</b><span>Hotspots</span></div>' +
+    '<div class="stat done"><b>' + done.length + '</b><span>Resolved</span></div>';
+}
+
 function render() {
+  renderStats();
   const list = filtered();
   $('count').textContent = list.length + ' of ' + reports.length + ' reports, highest priority first';
   $('list').innerHTML = list.map(function (r) {

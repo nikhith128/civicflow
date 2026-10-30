@@ -15,20 +15,14 @@
     <p>Enter your report ID to see where it stands.</p>
   </header>
   <main class="container">
-    <section class="page-intro">
-      <span class="eyebrow">REPORT UPDATES</span>
-      <h2>Track a report</h2>
-      <p>Enter the ID you received after submitting a report.</p>
-    </section>
     <form id="track-form">
       <label for="rid">Report ID</label>
-      <input id="rid" type="text" placeholder="CF-0041" maxlength="12" autocomplete="off" aria-describedby="rid-help">
-      <p id="rid-help" class="hint">Your ID looks like CF-0041.</p>
-      <button type="submit">Find my report</button>
+      <input id="rid" type="text" placeholder="e.g. CF-0041" maxlength="12" autocomplete="off">
+      <button type="submit">Track</button>
     </form>
     <p id="error" class="error" hidden></p>
     <section id="result" class="card" hidden></section>
-    <p class="track-link"><a href="/">← Report a new problem</a></p>
+    <p class="hint"><a href="/">Report a new problem</a></p>
   </main>
   <script src="/js/common.js"></script>
   <script src="/js/track.js"></script>
