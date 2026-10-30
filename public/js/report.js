@@ -69,20 +69,30 @@ form.addEventListener('submit', async function (e) {
     return;
   }
 
+  const photoFile = document.getElementById('photo').files[0];
+  if (photoFile && photoFile.size > 5 * 1024 * 1024) {
+    showError('The photo is too large. Please choose one under 5 MB.');
+    return;
+  }
+
   submitBtn.disabled = true;
   submitBtn.textContent = 'Submitting...';
 
   try {
+    const formData = new FormData();
+    formData.append('description', description);
+    formData.append('category', document.getElementById('category').value);
+    formData.append('address', document.getElementById('address').value.trim());
+    formData.append('lat', picked.lat);
+    formData.append('lng', picked.lng);
+    const photo = document.getElementById('photo').files[0];
+    if (photo) {
+      formData.append('image', photo);
+    }
+
     const res = await fetch('/api/reports', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        description: description,
-        category: document.getElementById('category').value,
-        address: document.getElementById('address').value.trim(),
-        lat: picked.lat,
-        lng: picked.lng
-      })
+      body: formData
     });
     const data = await res.json();
     if (!res.ok) {

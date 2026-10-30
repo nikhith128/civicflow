@@ -2,14 +2,39 @@ require('dotenv').config();
 
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
+const multer = require('multer');
 const db = require('./src/db');
 
 const app = express();
 
 const CATEGORIES = ['road_damage', 'waterlogging', 'garbage', 'streetlight', 'drainage', 'public_service', 'other'];
 
+const UPLOAD_DIR = path.join(__dirname, 'uploads');
+const IMAGE_TYPES = { 'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp' };
+
+const upload = multer({
+  storage: multer.memoryStorage(),
+  limits: { fileSize: 5 * 1024 * 1024 },
+  fileFilter: function (req, file, cb) {
+    if (IMAGE_TYPES[file.mimetype]) return cb(null, true);
+    cb(new Error('Only JPG, PNG or WebP images are allowed'));
+  }
+});
+
+function handleUpload(req, res, next) {
+  upload.single('image')(req, res, function (err) {
+    if (err) {
+      const msg = err.code === 'LIMIT_FILE_SIZE' ? 'Image is too large (max 5 MB)' : err.message;
+      return res.status(400).json({ error: msg });
+    }
+    next();
+  });
+}
+
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/uploads', express.static(UPLOAD_DIR));
 
 app.get('/api/health', (req, res) => {
   res.json({ ok: true });
@@ -36,8 +61,10 @@ app.get('/api/reports/:id', (req, res) => {
   res.json(report);
 });
 
-app.post('/api/reports', (req, res) => {
+app.post('/api/reports', handleUpload, (req, res) => {
   const body = req.body || {};
+  const lat = parseFloat(body.lat);
+  const lng = parseFloat(body.lng);
   const description = String(body.description || '').trim();
   const categoryUser = body.category || 'not_sure';
   const address = String(body.address || '').trim();
@@ -51,19 +78,28 @@ app.post('/api/reports', (req, res) => {
   if (categoryUser !== 'not_sure' && !CATEGORIES.includes(categoryUser)) {
     return res.status(400).json({ error: 'Unknown category' });
   }
-  if (typeof body.lat !== 'number' || typeof body.lng !== 'number' ||
-      body.lat < -90 || body.lat > 90 || body.lng < -180 || body.lng > 180) {
+   if (!Number.isFinite(lat) || !Number.isFinite(lng) ||
+      lat < -90 || lat > 90 || lng < -180 || lng > 180) {
     return res.status(400).json({ error: 'A valid location is required' });
+  }
+
+  const id = db.nextId(db.getAll());
+  let imagePath = null;
+  if (req.file) {
+    const fileName = id + '.' + IMAGE_TYPES[req.file.mimetype];
+    fs.mkdirSync(UPLOAD_DIR, { recursive: true });
+    fs.writeFileSync(path.join(UPLOAD_DIR, fileName), req.file.buffer);
+    imagePath = 'uploads/' + fileName;
   }
 
   const now = new Date().toISOString();
   const report = {
-    id: db.nextId(db.getAll()),
+    id: id,
     createdAt: now,
     description: description,
-    imagePath: null,
+    imagePath: imagePath,
     categoryUser: categoryUser,
-    location: { lat: body.lat, lng: body.lng, address: address },
+    location: { lat: lat, lng: lng, address: address },
     ai: null,
     status: 'submitted',
     assignedTo: null,
