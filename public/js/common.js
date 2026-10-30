@@ -8,7 +8,7 @@ const CF = (function () {
     submitted: 'Submitted', under_review: 'Under review', assigned: 'Assigned', in_progress: 'In progress',
     resolved: 'Resolved', duplicate: 'Duplicate', rejected: 'Rejected'
   };
-  const COLORS = { Low: '#16a34a', Medium: '#eab308', High: '#f97316', Critical: '#dc2626' };
+  const COLORS = { Low: '#1F8A4C', Medium: '#F2C230', High: '#F28C28', Critical: '#D92D20' };
 
   function esc(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -21,7 +21,7 @@ const CF = (function () {
   }
   function levelBadge(ai) {
     if (!ai) return '';
-    return '<span class="pill" style="background:' + COLORS[ai.priorityLevel] + '">' +
+    return '<span class="pill lv-' + esc(ai.priorityLevel) + '" style="background:' + COLORS[ai.priorityLevel] + '">' +
       esc(ai.priorityLevel) + ' · ' + esc(ai.priorityScore) + '</span>';
   }
   function statusBadge(status) {
